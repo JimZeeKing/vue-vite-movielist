@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Noto+Sans+Mono&display=swap");
+
+$text-color: #100f0f;
+$bg-color: #f1f1f1;
+$dark-color: #0f3d3e;
+$light-color: #e2dcc8;
+$lighter-color: lighten($light-color, 7);
+$content-font: "Inter Tight", sans-serif;
+$title-font: "Noto Sans Mono", monospace;
+
+//num of cols for the data grid
+$numCols: 5;
+
+:root {
+  --bg-color: #{$bg-color};
+  --text-color: #{$text-color};
+  --dark-color: #{$dark-color};
+  --light-color: #{$light-color};
+  --lighter-color: #{$lighter-color};
+
+  --num-cols: #{$numCols};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: $content-font;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+}
+
+#app {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
